@@ -10,7 +10,7 @@ public class TransactionThread extends Thread {
     }
 
     @Override
-    public synchronized void run() {
+    public void run() {
         if (isWithdrawal) {
             account.withdraw(amount);
         } else {
