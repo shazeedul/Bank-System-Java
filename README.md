@@ -1,18 +1,32 @@
-## Getting Started
+# Bank System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Bank System with Multi-thread synchronized method implementation in [Java Programe](<https://en.wikipedia.org/wiki/Java_(programming_language)>).
 
-## Folder Structure
+## Lessons Learned
 
-The workspace contains two folders by default, where:
+What did you learn while building this project? What challenges did you face and how did you overcome them?
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Java project initialize
+- Java class create
+- Java Thread
+- Java @Override method
+- Java Thread synchtonized
+- Java Collection(ArrayList)
+- Java Console Scanner input
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- ### Multi-Threading
+- ### Manage Thread synchtonized
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Authors
 
-## Dependency Management
+- [@shazeedul](https://www.github.com/shazeedul)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🚀 About Me
+
+I'm a backend developer. I'm practicing programming since 2018. I love to explore new technology which is efficiently increase my knowledge and skills.
+
+## 🔗 Links
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://shazeedul.dev/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/syed-shazeedul)
+[![twitter](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shazeedul)
