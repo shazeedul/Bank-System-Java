@@ -19,32 +19,27 @@ public class Main {
         transactions.add(new TransactionThread(account043, 36750, false));
         transactions.add(new TransactionThread(account043, 9450, true));
 
-        BankAccount currentAccount = account043;
+        // Get account details from user input
+        System.out.print("Enter the account number: ");
+        String accountNumber = scanner.nextLine();
+
+        // Search for an existing account
+        BankAccount currentAccount = null;
+        for (BankAccount account : accounts) {
+            if (account.getAccountNumber().equals(accountNumber)) {
+                currentAccount = account;
+                break;
+            }
+        }
+
+        // If no account is found, create a new one
+        if (currentAccount == null) {
+            currentAccount = new BankAccount(accountNumber, 0);
+            accounts.add(currentAccount);
+            System.out.println("Created a new account: " + accountNumber + " with an initial balance of 0.");
+        }
 
         while (true) {
-            System.out.print(
-                    "Do you want to use the current account (" + currentAccount.getAccountNumber() + ")? (yes/no): ");
-            String useCurrent = scanner.next();
-            if (useCurrent.equalsIgnoreCase("no")) {
-                System.out.print("Enter the account number: ");
-                String accountNumber = scanner.next();
-
-                // Search for an existing account
-                currentAccount = null;
-                for (BankAccount account : accounts) {
-                    if (account.getAccountNumber().equals(accountNumber)) {
-                        currentAccount = account;
-                        break;
-                    }
-                }
-
-                // If no account is found, create a new one
-                if (currentAccount == null) {
-                    currentAccount = new BankAccount(accountNumber, 0);
-                    accounts.add(currentAccount);
-                    System.out.println("Created a new account: " + accountNumber + " with an initial balance of 0.");
-                }
-            }
             int choice;
             while (true) {
                 System.out.println("\nChoose a transaction type: ");
